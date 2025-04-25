@@ -54,6 +54,11 @@ body::-webkit-scrollbar-track {
     padding: 10px;
     padding-bottom: 20px; 
 }
+.fixed-bottom {
+    background: linear-gradient(to bottom, white, purple); /* or just "purple" */
+    border-top: 1px solid #ccc;
+}
+
 
 /* Adjust for tablets and smaller screens (max-width: 768px) */
 @media (max-width: 768px) {
