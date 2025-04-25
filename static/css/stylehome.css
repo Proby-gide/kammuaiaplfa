@@ -6,14 +6,6 @@ html, body {
     overflow-x: hidden;
 }
 
-body {
-    min-height: 100vh; /* Ensures full viewport height at minimum */
-    background: linear-gradient(to bottom, white, purple);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 100%;
-    padding-bottom: 90px;}
-
     body {
     min-height: 100vh;
     background: linear-gradient(to bottom, white, purple);
@@ -60,10 +52,12 @@ body::-webkit-scrollbar-track {
     bottom: 0 !important;
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
-    z-index: 1;
-    position: relative;
-    top: 10px;
 }
+.fixed-bottom {
+    background-color: transparent;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* optional line */
+}
+
 
 
 /* Adjust for tablets and smaller screens (max-width: 768px) */
