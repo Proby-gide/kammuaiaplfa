@@ -1,0 +1,75 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh; /* Ensures full viewport height at minimum */
+    background: linear-gradient(to bottom, white, purple);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+}
+/* Style the scrollbar track */
+body::-webkit-scrollbar {
+    width: 10px; /* Adjust width for vertical scrollbar */
+    height: 12px; /* Adjust height for horizontal scrollbar */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(purple,white,gold); /* Set purple color */
+    border-radius: 10px; /* Optional: gives rounded corners */
+}
+
+/* Style the scrollbar track (background of the scrollbar) */
+body::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Light color for track */
+    border-radius: 10px; /* Optional: rounded corners for track */
+}
+
+/* --------------------------QA------------------------------- */
+
+.textArea {
+    /* background-color: aqua; */
+    max-height: 500px; 
+    overflow: auto; 
+    width: 100%; 
+    box-sizing: border-box; 
+    padding: 10px;
+    padding-bottom: 20px; 
+}
+
+/* Adjust for tablets and smaller screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .textArea {
+        max-height: 710px; /* Reduce max height for smaller screens */
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Adjust for very small screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .textArea {
+        max-height: 700px; /* Further reduce max height for small screens */
+        padding: 5px; /* Adjust padding for very small screens */
+    }
+}
+
+/* Hide scrollbar for .textArea (this hides it only when the content doesn't overflow) */
+.textArea::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+/* Show the scrollbar when content overflows */
+.textArea:focus::-webkit-scrollbar {
+    visibility: visible;
+}
+
+
+.withbtn{
+    display: flex;
+    flex-direction: row;
+}
