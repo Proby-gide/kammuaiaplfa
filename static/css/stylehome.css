@@ -12,6 +12,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
+    padding-bottom: 90px;
 }
 /* Style the scrollbar track */
 body::-webkit-scrollbar {
