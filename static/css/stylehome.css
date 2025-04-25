@@ -61,6 +61,8 @@ body::-webkit-scrollbar-track {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
     z-index: 1;
+    position: relative;
+    top: 10px;
 }
 
 
