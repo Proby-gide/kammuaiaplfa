@@ -12,8 +12,19 @@ body {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
-    padding-bottom: 90px;
+    padding-bottom: 90px;}
+
+    body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, white, purple);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 100px; /* enough to visually include the input bar area */
+    box-sizing: border-box;
 }
+
+
 /* Style the scrollbar track */
 body::-webkit-scrollbar {
     width: 10px; /* Adjust width for vertical scrollbar */
